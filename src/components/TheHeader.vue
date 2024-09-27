@@ -22,17 +22,12 @@ const store = useStore();
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                    <form
-                        class="d-flex w-100"
-                        role="search"
-                        @submit.prevent.enter="store.addTask"
-                    >
+                    <form class="d-flex w-100" role="search">
                         <input
                             class="form-control me-2"
                             type="Add task"
                             placeholder="Input your task here"
                             aria-label="Search"
-                            v-model="store.taskText"
                         />
                         <button class="btn btn-success" type="submit">
                             Add
